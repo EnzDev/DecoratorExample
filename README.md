@@ -1,5 +1,14 @@
 # DecoratorExample
 Exemple du cours avec les décorateurs flash et immortel.
+
+![Diagram](UML.png)
+
+Fleche verte : Implémente  
+Fleche blanche en tiret : Dépendance  
+Fleche blanche avec losange : Composition    
+
+Execution
+---------
 ```Bash
 $ javac *.java
 $ java Main

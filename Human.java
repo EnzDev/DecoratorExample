@@ -9,4 +9,9 @@ public class Human implements IHuman{
     public float getSpeed() {
         return 44.72f;
     }
+
+    @Override
+    public String toString() {
+        return "Human";
+    }
 }

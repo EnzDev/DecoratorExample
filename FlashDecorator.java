@@ -1,7 +1,7 @@
 public class FlashDecorator implements IHuman {
     private IHuman decoratedHuman;
 
-    public FlashDecorator(IHuman h){ this.decoratedHuman = h; }
+    FlashDecorator(IHuman h){ this.decoratedHuman = h; }
 
     @Override
     public int getLifeExpectancy() {
@@ -11,5 +11,10 @@ public class FlashDecorator implements IHuman {
     @Override
     public float getSpeed() {
         return 3000;
+    }
+
+    @Override
+    public String toString() {
+        return decoratedHuman + " & Flash";
     }
 }

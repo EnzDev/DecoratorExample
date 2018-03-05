@@ -1,15 +1,20 @@
 public class ImmortalDecorator implements IHuman{
-    IHuman decoratedHuman;
+    private IHuman decoratedHuman;
 
-    public ImmortalDecorator(IHuman h){ this.decoratedHuman = h; }
+    ImmortalDecorator(IHuman h){ this.decoratedHuman = h; }
 
     @Override
     public int getLifeExpectancy() {
-        return 999;
+        return Integer.MAX_VALUE;
     }
 
     @Override
     public float getSpeed() {
         return decoratedHuman.getSpeed();
+    }
+
+    @Override
+    public String toString() {
+        return decoratedHuman + " & Immortal";
     }
 }
